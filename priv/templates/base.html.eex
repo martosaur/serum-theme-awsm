@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/awsm.css">
+    <%= include "awsm_theme" %>
+    <title><%= @page.title %> - <%= @site.name %></title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="<%= base() %>"><%= @site.name %></a></h1>
+      <p><%= @site.description %></p>
+      <nav>
+        <%= include "nav" %>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <%= @contents %>
+      </article>
+    </main>
+    <footer>
+      <%= include "footer" %>
+    </footer>
+  </body>
+</html>
